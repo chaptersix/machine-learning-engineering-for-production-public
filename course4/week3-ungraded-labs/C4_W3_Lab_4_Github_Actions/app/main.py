@@ -13,7 +13,7 @@ with open("models/wine.pkl", "rb") as file:
     clf = pickle.load(file)
 
 
-class Wine(BaseModel):
+class Wine(BaseModel): # you need help
     batches: List[conlist(item_type=float, min_items=13, max_items=13)]
 
 
