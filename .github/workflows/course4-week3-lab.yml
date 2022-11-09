@@ -2,7 +2,7 @@
 
 name: C4W3-Ungraded-Lab
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push request events only when there are changes in the desired path
   push:
@@ -27,17 +27,17 @@ jobs:
       -
         name: Checkout
         uses: actions/checkout@v2
-      - 
+      -
         name: Set up Python
         uses: actions/setup-python@v2
         with:
           python-version: '3.7.7'
-      - 
+      -
         name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-      -
+      - # but is it blazing fast?
         name: Test with pytest
         run: |
           cd app/
